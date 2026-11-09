@@ -105,8 +105,8 @@ function AppShell({ children }: { children: ReactNode }) {
         <header className="topbar">
           <div className="crumb">Learning space <ChevronRight size={12} style={{ verticalAlign: 'middle', margin: '0 4px' }} /> <strong>{currentTitle}</strong></div>
           <div className="top-profile" data-testid="profile-sample-student">
-            <div className="avatar" aria-label="Zahra Butti initials">ZB</div>
-            <div className="profile-copy"><div className="profile-name">Zahra Butti</div><div className="profile-role">Undergraduate student</div></div>
+            <div className="avatar" aria-label="Raisa Butti initials">RB</div>
+            <div className="profile-copy"><div className="profile-name">Raisa Butti</div><div className="profile-role">Undergraduate student</div></div>
           </div>
         </header>
         <main>{children}</main>
@@ -136,7 +136,7 @@ function Dashboard() {
       <section className="welcome-panel" aria-labelledby="welcome-title">
         <div className="welcome-copy">
           <div className="welcome-kicker">A good place to begin</div>
-          <h1 id="welcome-title" className="welcome-title">You’re building your next opportunity, Zahra.</h1>
+          <h1 id="welcome-title" className="welcome-title">You’re building your next opportunity, Raisa.</h1>
           <p>Pick up where you left off, or take one small step today.</p>
         </div>
         <Link href="/courses" className="welcome-cta" data-testid="link-explore-courses">Explore courses <ArrowRight size={15} /></Link>
