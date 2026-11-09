@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "Internship Prep"
+description = "A responsive learning hub for university students to prepare for internships, track course progress, complete a CV quiz, and save evidence of their skills locally in the browser."
+version = "1.0.0"
+id = "artifacts/internship-prep-lms"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 23231
+
+[services.development]
+run = "pnpm --filter @workspace/internship-prep-lms run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/internship-prep-lms", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/internship-prep-lms/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "23231"
+BASE_PATH = "/"
