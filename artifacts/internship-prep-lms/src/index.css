@@ -79,7 +79,6 @@
 .brand { display: flex; align-items: center; gap: 12px; padding: 0 10px 30px; color: #fff; }
 .brand-mark { width: 38px; height: 38px; display: grid; place-items: center; border-radius: 11px; background: #f1c775; color: #193455; }
 .brand-title { font: 800 15px/1.15 var(--app-font-serif); letter-spacing: -.035em; }
-.brand-sub { color: #b4c2d3; font-size: 10px; letter-spacing: .12em; text-transform: uppercase; margin-top: 4px; }
 .nav-caption { color: #9daec2; font-size: 10px; letter-spacing: .14em; text-transform: uppercase; padding: 0 12px; margin: 8px 0 9px; font-weight: 700; }
 .nav-list { display: grid; gap: 5px; }
 .nav-link { display: flex; align-items: center; gap: 12px; color: #d5dfeb; text-decoration: none; border-radius: 8px; padding: 11px 12px; font-size: 13px; font-weight: 500; transition: background .18s, color .18s, transform .18s; }
@@ -209,7 +208,7 @@ button:focus-visible,a:focus-visible,input:focus-visible { outline:3px solid #d7
   .brand { padding:0; gap:9px; }
   .brand-mark { width:34px;height:34px; }
   .brand-title { font-size:13px; }
-  .brand-sub,.nav-caption,.sidebar-note { display:none; }
+  .nav-caption,.sidebar-note { display:none; }
   .mobile-nav-toggle { display:grid; place-items:center; border:1px solid #ffffff35; background:transparent; color:white; border-radius:6px; width:36px;height:36px; cursor:pointer; }
   .nav-list { display:none; position:absolute; left:0; right:0; top:58px; padding:9px 14px 14px; background:#193455; box-shadow:0 8px 14px #10233b22; }
   .nav-list.open { display:grid; grid-template-columns:repeat(2,1fr); }
