@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#10253a">
+  <meta name="description" content="Team P06 Internship Preparation LMS — functional classroom MVP showcase">
+  <title>IPP Learn · Team P06 | Internship Preparation LMS</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar" id="sidebar">
+      <button class="brand" data-go="dashboard" aria-label="Go to overview">
+        <span class="brand-logo">P<span>06</span></span>
+        <span><strong>IPP <em>Learn</em></strong><small>Internship preparation</small></span>
+      </button>
+      <div class="side-label">STUDENT WORKSPACE</div>
+      <nav class="nav" aria-label="Main navigation">
+        <button data-page="dashboard" class="active"><span class="nav-icon">◫</span> Overview</button>
+        <button data-page="courses"><span class="nav-icon">▤</span> Learning paths <span class="nav-count">3</span></button>
+        <button data-page="quiz"><span class="nav-icon">◇</span> Skills quiz</button>
+        <button data-page="evidence"><span class="nav-icon">▱</span> My portfolio</button>
+        <button data-page="readiness"><span class="nav-icon">◉</span> Readiness report</button>
+      </nav>
+      <div class="side-label second-label">PROJECT HANDOFF</div>
+      <nav class="nav"><button data-page="integration"><span class="nav-icon">⇄</span> IPP integration</button></nav>
+      <div class="sidebar-bottom">
+        <div class="scope-card"><span class="pulse"></span><strong>Standalone MVP</strong><p>Progress and uploaded files stay in this browser. Cross-team integration is not live.</p></div>
+        <div class="team-line"><span class="mini-avatar">06</span><span><b>Team P06</b><small>MBZUAI · BUS2010</small></span></div>
+      </div>
+    </aside>
+    <div class="workspace">
+      <header class="topbar">
+        <div class="top-left"><button id="menu-toggle" aria-label="Open menu">☰</button><span class="crumb">IPP / Student preparation</span><span class="crumb-sep">/</span><b id="current-title">Overview</b></div>
+        <div class="top-right"><button class="reset-demo" data-action="reset" title="Reset this sample student’s local demo data">↺ Reset demo</button><span class="demo-pill"><span class="live-dot"></span> INTERACTIVE DEMO</span><div class="user"><span class="user-avatar">RB</span><span><b>Raisa Butti</b><small>Sample student</small></span></div></div>
+      </header>
+      <main id="content" tabindex="-1"></main>
+      <footer>Team P06 · Sprint 3 showcase build <span>Independent demonstration · no university authentication or live IPP data</span></footer>
+    </div>
+  </div>
+  <div id="toast" role="status" aria-live="polite"></div>
+  <script src="app.js" defer></script>
+</body>
+</html>
